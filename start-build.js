@@ -1,8 +1,7 @@
 // start-build.js
 const { spawn } = require('child_process');
-require('dotenv').config({ path: '.env' });
 
-console.log('Starting TinaCMS build with loaded environment variables...');
+console.log('Starting TinaCMS build...');
 
 const child = spawn(
   'yarn',

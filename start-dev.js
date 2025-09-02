@@ -1,11 +1,7 @@
 const { spawn } = require('child_process');
 
-// Load environment variables from .env file
-require('dotenv').config({ path: '.env' });
+console.log('Starting TinaCMS dev server...');
 
-console.log('Starting TinaCMS dev server with loaded environment variables...');
-
-// Spawn the TinaCMS dev server command
 const child = spawn(
   'yarn',
   ['exec', 'tinacms', 'dev', '-c', 'next dev'],
@@ -14,7 +10,6 @@ const child = spawn(
     shell: true, // Use shell to properly handle commands
     env: {
       ...process.env,
-      TINA_PUBLIC_IS_LOCAL: 'true', // Ensure this is set
     },
   }
 );
