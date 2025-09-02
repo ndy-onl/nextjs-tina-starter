@@ -24,6 +24,8 @@ jobs:
         with:
           node-version: '20'
           cache: yarn
+      - name: Enable Corepack
+        run: corepack enable
       - id: configurepages
         uses: actions/configure-pages@v5
       - name: Restore cache
@@ -33,8 +35,10 @@ jobs:
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/yarn.lock') }}-
-      - run: yarn
-      - run: yarn build
+      - name: Install Dependencies
+        run: yarn install --immutable
+      - name: Build with Next.js
+        run: yarn build
         env:
           EXPORT: 1
           UNOPTIMIZED: 1
