@@ -4,8 +4,8 @@ const { spawn } = require('child_process');
 console.log('Starting TinaCMS build...');
 
 const child = spawn(
-  'yarn',
-  ['exec', 'tinacms', 'build', '--', '&&', 'next', 'build'],
+  './node_modules/.bin/tinacms',
+  ['build', '--', '&&', 'next', 'build'],
   {
     stdio: 'inherit',
     shell: true,
