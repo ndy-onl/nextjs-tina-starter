@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "start": "next start",
-    "dev": "TINA_PUBLIC_IS_LOCAL=true yarn exec tinacms dev -c \"next dev\"",
-    "build": "yarn exec tinacms build && next build",
+    "dev": "dotenv -- TINA_PUBLIC_IS_LOCAL=true yarn exec tinacms dev -c \"next dev\"",
+    "build": "dotenv -- yarn exec tinacms build && next build",
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "next lint"
