@@ -1,6 +1,6 @@
 {
-  "name": "tailwind-nextjs-starter-blog",
-  "version": "2.4.0",
+  "name": "nextjs-tina-starter",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "next dev",
@@ -12,6 +12,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@ndy-onl/nextjs-tina-core": "github:ndy-onl/nextjs-tina-core#main",
     "@headlessui/react": "2.2.0",
     "@next/bundle-analyzer": "15.2.4",
     "@tailwindcss/forms": "^0.5.9",
