@@ -4,7 +4,7 @@ console.log('Starting TinaCMS dev server...');
 
 const child = spawn(
   'yarn',
-  ['exec', 'tinacms', 'dev', '-c', 'next dev'],
+  ['exec', 'tinacms', 'dev', '--', '-c', 'next dev'],
   {
     stdio: 'inherit', // Pipe output to the parent process
     shell: true, // Use shell to properly handle commands

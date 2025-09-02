@@ -5,7 +5,7 @@ console.log('Starting TinaCMS build...');
 
 const child = spawn(
   'yarn',
-  ['exec', 'tinacms', 'build', '&&', 'next', 'build'],
+  ['exec', 'tinacms', 'build', '--', '&&', 'next', 'build'],
   {
     stdio: 'inherit',
     shell: true,
