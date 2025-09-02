@@ -39,6 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "virtual:3ac38410543e406772a58f3b7f906e66d4b082de0d2578d47cfac4a52f59df20754ac5572d3c15cf52a84c8182c15ea090841bbdd8717e056aee5256e893f164#npm:18.3.7"],\
             ["autoprefixer", "virtual:3ac38410543e406772a58f3b7f906e66d4b082de0d2578d47cfac4a52f59df20754ac5572d3c15cf52a84c8182c15ea090841bbdd8717e056aee5256e893f164#npm:10.4.21"],\
             ["contentlayer", "npm:0.3.4"],\
+            ["dotenv", "npm:17.2.1"],\
             ["dotenv-cli", "npm:10.0.0"],\
             ["eslint", "npm:8.57.1"],\
             ["eslint-config-next", "virtual:3ac38410543e406772a58f3b7f906e66d4b082de0d2578d47cfac4a52f59df20754ac5572d3c15cf52a84c8182c15ea090841bbdd8717e056aee5256e893f164#npm:14.2.1"],\
@@ -17555,6 +17556,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "virtual:3ac38410543e406772a58f3b7f906e66d4b082de0d2578d47cfac4a52f59df20754ac5572d3c15cf52a84c8182c15ea090841bbdd8717e056aee5256e893f164#npm:18.3.7"],\
             ["autoprefixer", "virtual:3ac38410543e406772a58f3b7f906e66d4b082de0d2578d47cfac4a52f59df20754ac5572d3c15cf52a84c8182c15ea090841bbdd8717e056aee5256e893f164#npm:10.4.21"],\
             ["contentlayer", "npm:0.3.4"],\
+            ["dotenv", "npm:17.2.1"],\
             ["dotenv-cli", "npm:10.0.0"],\
             ["eslint", "npm:8.57.1"],\
             ["eslint-config-next", "virtual:3ac38410543e406772a58f3b7f906e66d4b082de0d2578d47cfac4a52f59df20754ac5572d3c15cf52a84c8182c15ea090841bbdd8717e056aee5256e893f164#npm:14.2.1"],\

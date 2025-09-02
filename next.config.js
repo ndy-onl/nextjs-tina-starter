@@ -1,3 +1,5 @@
+require('dotenv').config({ path: './.env' });
+
 const { withContentlayer } = require('next-contentlayer2')
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({

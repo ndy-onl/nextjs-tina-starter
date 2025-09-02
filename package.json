@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "start": "next start",
-    "dev": "dotenv -e .env -- TINA_PUBLIC_IS_LOCAL=true yarn exec tinacms dev -c \"next dev\"",
-    "build": "dotenv -e .env -- yarn exec tinacms build && next build",
+    "dev": "TINA_PUBLIC_IS_LOCAL=true yarn exec tinacms dev -c \"next dev\"",
+    "build": "yarn exec tinacms build && next build",
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "next lint"
@@ -18,6 +18,7 @@
     "@tinacms/cli": "^1.6.1",
     "@tinacms/datalayer": "^1.3.1",
     "contentlayer": "^0.3.4",
+    "dotenv": "^17.2.1",
     "github-slugger": "^2.0.0",
     "gray-matter": "^4.0.3",
     "image-size": "^1.1.1",
