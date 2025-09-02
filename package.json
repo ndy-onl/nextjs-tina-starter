@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "TINA_PUBLIC_IS_LOCAL=true yarn exec tinacms dev -c \"next dev\"",,
-    "build": "yarn exec tinacms build && next build",
     "start": "next start",
+    "dev": "dotenv -e .env -- TINA_PUBLIC_IS_LOCAL=true yarn exec tinacms dev -c \"next dev\"",
+    "build": "dotenv -e .env -- yarn exec tinacms build && next build",
+    "serve": "next start",
+    "analyze": "cross-env ANALYZE=true next build",
     "lint": "next lint"
   },
   "dependencies": {
@@ -34,16 +36,22 @@
     "rehype-slug": "^6.0.0",
     "remark-gfm": "^4.0.0",
     "remark-math": "^6.0.0",
+    "scheduler": "^0.26.0",
+    "slate": "^0.118.1",
+    "slate-dom": "^0.118.1",
+    "slate-react": "^0.117.4",
     "tinacms": "^2.2.1",
     "tinacms-authjs": "^5.0.1",
     "tinacms-gitprovider-github": "^2.0.1",
-    "upstash-redis-level": "^1.1.1"
+    "upstash-redis-level": "^1.1.1",
+    "use-sync-external-store": "^1.5.0"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.19",
+    "dotenv-cli": "^10.0.0",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.1",
     "postcss": "^8.4.38",
